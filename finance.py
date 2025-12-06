@@ -301,6 +301,8 @@ print("Year 1 FCF forecast :", year1_fcf)
 print("PV of Year 1 FCF    :", pv_year1)
 print("PV of Terminal Value:", pv_terminal)
 print("Enterprise Value    :", enterprise_value)
+master.to_csv("amazon_master_financials.csv")
+forecast_df[["revenue", "net_income", "FCF"]].to_csv("amazon_forecast.csv")
 
 # ============================================================
 # END
